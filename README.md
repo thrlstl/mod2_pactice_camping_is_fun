@@ -3,6 +3,8 @@ Congratulations! You have been hired by Access Camp and for your first job, you 
 
 A `camper` can participate in many `activities` and an `activity` can have many `campers` participating in it.
 
+camper -< signup >- activity
+
 Visiting `/campers` will show the index page of all the campers and visiting `/activities` will go to the index page for all the `activities`.
 Currently, we don't have any way to associate the two, so consider the relationship and think about how a `camper` can `signup` for an `activity`!
 

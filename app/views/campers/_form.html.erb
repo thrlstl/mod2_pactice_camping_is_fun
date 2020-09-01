@@ -1,0 +1,13 @@
+<% if flash[:my_errors] %>
+<% flash[:my_errors].each do |error| %>
+    <p><%= error %></p>
+    <% end %>
+<% end %>
+
+<%= form_for @camper do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %><br>
+    <%= f.label :age %>
+    <%= f.number_field :age %><br>
+    <%= f.submit %>
+    <% end %>
